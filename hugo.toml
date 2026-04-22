@@ -1,20 +1,7 @@
 baseURL = "https://your-domain.com/"
-languageCode = "zh-CN"
+languageCode = "en"
 title = "NodAlert Privacy Policy"
 disableHugoGeneratorInject = true
-
-defaultContentLanguage = "zh"
-defaultContentLanguageInSubdir = true
-
-[Languages]
-  [Languages.zh]
-    languageName = "中文"
-    languageCode = "zh-CN"
-    weight = 1
-  [Languages.en]
-    languageName = "English"
-    languageCode = "en-US"
-    weight = 2
 
 [params]
   [params.privacy]
@@ -27,9 +14,6 @@ defaultContentLanguageInSubdir = true
     [markup.goldmark.renderer]
       unsafe = true
 
-# Disable RSS for all content types
+# Disable RSS
 [rss]
   disable = true
-
-[sitemap]
-  excludeFiles = ["**/privacy.md"]

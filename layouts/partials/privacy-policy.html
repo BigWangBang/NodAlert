@@ -1,80 +1,80 @@
 {{/*
-  Partial: privacy-policy
+  Partial: privacy-policy.html
   Usage: {{ partial "privacy-policy.html" . }}
 */}}
 
-{{ $lastUpdated := .Site.Params.privacy.last_updated | default "2026年4月22日" }}
+{{ $lastUpdated := .Site.Params.privacy.last_updated | default "2026-04-22" }}
 {{ $contactEmail := .Site.Params.privacy.contact_email | default "support@nodalert.app" }}
 
 <article class="privacy-policy">
   <header class="privacy-policy__header">
-    <h1>{{ i18n "privacy_title" | default "隐私政策" }}</h1>
-    <p class="privacy-policy__updated">{{ i18n "privacy_last_updated" | default "最后更新" }}：{{ $lastUpdated }}</p>
+    <h1>Privacy Policy</h1>
+    <p class="privacy-policy__updated">Last Updated: {{ $lastUpdated }}</p>
   </header>
 
   <div class="privacy-policy__intro">
-    <p><strong>{{ .Site.Params.privacy.app_name | default "NodAlert" }}</strong> {{ i18n "privacy_intro" | default "是一款专注于专注状态监测的应用程序。我们高度重视您的隐私保护。" }}</p>
+    <p><strong>{{ .Site.Params.privacy.app_name | default "NodAlert" }}</strong> is an application focused on concentration state monitoring. We take your privacy protection seriously.</p>
   </div>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section1_title" | default "1. 信息收集" }}</h2>
-    <p>{{ i18n "privacy_section1_desc" | default "当您使用 NodAlert 时：" }}</p>
+    <h2>1. Information Collection</h2>
+    <p>When you use NodAlert:</p>
     <ul>
-      <li><strong>{{ i18n "privacy_camera_data" | default "摄像头数据" }}：</strong>{{ i18n "privacy_camera_desc" | default "我们使用设备前置摄像头实时分析面部特征，以检测您的专注状态。摄像头图像仅在本地处理，不会上传至我们的服务器或任何第三方。" }}</li>
-      <li><strong>{{ i18n "privacy_local_storage" | default "本地存储" }}：</strong>{{ i18n "privacy_local_storage_desc" | default "您的设置偏好和监测记录存储在您的设备本地。" }}</li>
-      <li><strong>{{ i18n "privacy_usage_data" | default "使用数据" }}：</strong>{{ i18n "privacy_usage_data_desc" | default "我们可能会收集匿名的使用统计数据（如功能使用频率），用于改进应用体验，但不包含任何个人身份信息。" }}</li>
+      <li><strong>Camera Data:</strong> We use your device's front-facing camera to analyze facial features in real-time to detect your concentration state. Camera images are processed locally on your device only and will not be uploaded to our servers or any third parties.</li>
+      <li><strong>Local Storage:</strong> Your settings preferences and monitoring records are stored locally on your device.</li>
+      <li><strong>Usage Data:</strong> We may collect anonymous usage statistics (such as feature usage frequency) to improve the app experience, without any personally identifiable information.</li>
     </ul>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section2_title" | default "2. 数据使用" }}</h2>
-    <p>{{ i18n "privacy_section2_desc" | default "我们收集的所有数据仅用于以下目的：" }}</p>
+    <h2>2. Data Use</h2>
+    <p>All data we collect is used solely for the following purposes:</p>
     <ul>
-      <li>{{ i18n "privacy_purpose1" | default "提供实时的专注状态监测功能" }}</li>
-      <li>{{ i18n "privacy_purpose2" | default "发送疲劳提醒和警报" }}</li>
-      <li>{{ i18n "privacy_purpose3" | default "改进应用功能和用户体验" }}</li>
+      <li>Provide real-time concentration state monitoring</li>
+      <li>Send fatigue reminders and alerts</li>
+      <li>Improve app functionality and user experience</li>
     </ul>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section3_title" | default "3. 数据共享" }}</h2>
-    <p><strong>{{ i18n "privacy_no_sell" | default "我们不会出售、交易或以任何方式将您的个人信息转让给外部各方。" }}</strong> {{ i18n "privacy_no_sell_desc" | default "所有摄像头数据在您的设备上本地处理，不会传输到任何服务器。" }}</p>
+    <h2>3. Data Sharing</h2>
+    <p><strong>We do not sell, trade, or otherwise transfer your personal information to outside parties.</strong> All camera data is processed locally on your device and is never transmitted to any server.</p>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section4_title" | default "4. 数据安全" }}</h2>
-    <p>{{ i18n "privacy_security_desc" | default "我们采用行业标准的安全措施来保护您的数据安全。摄像头数据完全在本地处理，不经过任何网络传输。" }}</p>
+    <h2>4. Data Security</h2>
+    <p>We employ industry-standard security measures to protect your data. Camera data is processed entirely locally without any network transmission.</p>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section5_title" | default "5. 第三方服务" }}</h2>
-    <p>{{ i18n "privacy_third_party_desc" | default "本应用可能包含指向第三方网站的链接。我们不对这些网站的隐私实践负责，建议您查阅其隐私政策。" }}</p>
+    <h2>5. Third-Party Services</h2>
+    <p>This app may contain links to third-party websites. We are not responsible for the privacy practices of these sites and recommend reviewing their privacy policies.</p>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section6_title" | default "6. 儿童隐私" }}</h2>
-    <p>{{ i18n "privacy_children_desc" | default "我们的服务不面向13岁以下的儿童，也不收集其个人信息。" }}</p>
+    <h2>6. Children's Privacy</h2>
+    <p>Our service is not directed to children under 13 and we do not knowingly collect their personal information.</p>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section7_title" | default "7. 您的权利" }}</h2>
-    <p>{{ i18n "privacy_rights_desc" | default "根据适用法律，您可能有权：" }}</p>
+    <h2>7. Your Rights</h2>
+    <p>Under applicable law, you may have the right to:</p>
     <ul>
-      <li>{{ i18n "privacy_right1" | default "访问我们持有的关于您的个人信息" }}</li>
-      <li>{{ i18n "privacy_right2" | default "更正不准确的信息" }}</li>
-      <li>{{ i18n "privacy_right3" | default "删除您的个人信息" }}</li>
-      <li>{{ i18n "privacy_right4" | default "撤回同意" }}</li>
+      <li>Access personal information we hold about you</li>
+      <li>Correct inaccurate information</li>
+      <li>Delete your personal information</li>
+      <li>Withdraw consent</li>
     </ul>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section8_title" | default "8. 联系我们" }}</h2>
-    <p>{{ i18n "privacy_contact_desc" | default "如果您对本隐私政策有任何疑问，请通过以下方式联系我们：" }}</p>
-    <p>{{ i18n "privacy_email_label" | default "电子邮件" }}：<a href="mailto:{{ $contactEmail }}">{{ $contactEmail }}</a></p>
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+    <p>Email: <a href="mailto:{{ $contactEmail }}">{{ $contactEmail }}</a></p>
   </section>
 
   <section class="privacy-policy__section">
-    <h2>{{ i18n "privacy_section9_title" | default "9. 政策更新" }}</h2>
-    <p>{{ i18n "privacy_updates_desc" | default "我们可能会不时更新本隐私政策。任何更改将在本页面发布更新日期。我们建议您定期查阅本政策。" }}</p>
+    <h2>9. Policy Updates</h2>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with the update date. We recommend reviewing this policy periodically.</p>
   </section>
 </article>
