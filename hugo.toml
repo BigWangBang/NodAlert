@@ -1,0 +1,30 @@
+baseURL = "https://your-domain.com/"
+languageCode = "zh-CN"
+title = "NodAlert Privacy Policy"
+disableHugoGeneratorInject = true
+
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
+
+[Languages]
+  [Languages.zh]
+    languageName = "中文"
+    languageCode = "zh-CN"
+    weight = 1
+    contentDir = "content"
+  [Languages.en]
+    languageName = "English"
+    languageCode = "en-US"
+    weight = 2
+    contentDir = "content"
+
+[params]
+  [params.privacy]
+    last_updated = "2026-04-22"
+    contact_email = "support@nodalert.app"
+    app_name = "NodAlert"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

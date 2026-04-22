@@ -4,6 +4,12 @@ other = "隐私政策"
 [privacy_last_updated]
 other = "最后更新"
 
+[privacy_meta_desc]
+other = "NodAlert 隐私政策 - 了解我们如何保护您的数据"
+
+[all_rights_reserved]
+other = "版权所有."
+
 [privacy_intro]
 other = "是一款专注于专注状态监测的应用程序。我们高度重视您的隐私保护。"
 

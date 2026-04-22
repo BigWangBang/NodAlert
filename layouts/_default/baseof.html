@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ i18n "privacy_meta_desc" | default "NodAlert 隐私政策 - 了解我们如何保护您的数据" }}">
+    <link rel="stylesheet" href="/css/style.css">
+    {{ block "head" . }}{{ end }}
+</head>
+<body>
+    <main class="container">
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer class="footer">
+        <p>&copy; {{ now.Year }} {{ .Site.Params.privacy.app_name | default "NodAlert" }}. {{ i18n "all_rights_reserved" | default "版权所有." }}</p>
+    </footer>
+</body>
+</html>

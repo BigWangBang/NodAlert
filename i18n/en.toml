@@ -4,6 +4,12 @@ other = "Privacy Policy"
 [privacy_last_updated]
 other = "Last Updated"
 
+[privacy_meta_desc]
+other = "NodAlert Privacy Policy - Learn how we protect your data"
+
+[all_rights_reserved]
+other = "All rights reserved."
+
 [privacy_intro]
 other = "is an application focused on concentration state monitoring. We take your privacy protection seriously."
 
