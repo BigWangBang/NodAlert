@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="home">
+  <div class="hero">
+    <h1>{{ .Site.Params.privacy.app_name | default "NodAlert" }}</h1>
+    <p>{{ i18n "home_tagline" | default "专注状态监测，保护您的安全" }}</p>
+    <nav class="lang-nav">
+      <a href="/zh/privacy/">{{ i18n "view_privacy_zh" | default "查看中文隐私政策" }}</a>
+      <a href="/en/privacy/">{{ i18n "view_privacy_en" | default "View Privacy Policy (English)" }}</a>
+    </nav>
+  </div>
+</section>
+{{ end }}

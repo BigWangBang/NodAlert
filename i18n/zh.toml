@@ -111,3 +111,12 @@ other = "9. 政策更新"
 
 [privacy_updates_desc]
 other = "我们可能会不时更新本隐私政策。任何更改将在本页面发布更新日期。我们建议您定期查阅本政策。"
+
+[home_tagline]
+other = "专注状态监测，保护您的安全"
+
+[view_privacy_zh]
+other = "查看中文隐私政策"
+
+[view_privacy_en]
+other = "View Privacy Policy (English)"

@@ -11,12 +11,10 @@ defaultContentLanguageInSubdir = true
     languageName = "中文"
     languageCode = "zh-CN"
     weight = 1
-    contentDir = "content"
   [Languages.en]
     languageName = "English"
     languageCode = "en-US"
     weight = 2
-    contentDir = "content"
 
 [params]
   [params.privacy]
@@ -28,3 +26,10 @@ defaultContentLanguageInSubdir = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Disable RSS for all content types
+[rss]
+  disable = true
+
+[sitemap]
+  excludeFiles = ["**/privacy.md"]
